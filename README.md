@@ -20,6 +20,7 @@ I have not written tests, ive been working with extremely young start upsin the 
 14. I will be deploying this via github.
 15. I wanted to create a lot of code into custom hooks eg, global keyboard and mouse events.
 16. I will soon add the npm package of this test and updated the readme again.
+17. ive created a npm package for this app which can be installed in node modules using the command `npm i @aravindbairwa/zeroxpasshomepage` name of the package is `@aravindbairwa/zeroxpasshomepage` , it still has some issues to iron out though.
 
 
 Thankyou
