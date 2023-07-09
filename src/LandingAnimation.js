@@ -17,9 +17,9 @@ const LandingAnimation = () => {
         div.style.color = 'black'; // Customize color if needed
         animationRef.current.appendChild(div);
 
-        gsap.set(div, { x: -200, opacity: 0 }); // Set initial position to the left
+        gsap.set(div, { x: 0, opacity: 0 }); // Set initial position to the left
 
-        timeline.to(div, { duration: 0.5, x: -200, opacity: 1 }, index * 0.2); // Animate from left to right
+        timeline.to(div, { duration: 0.5, x: 0, opacity: 1 }, index * 0.2); // Animate from left to right
       });
 
       timeline.play();
