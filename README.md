@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+Go into the folder of the project, use `npm i` or `yarn` to build the node modules.
+Start the dev server using `npm start` or `yarn start`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+You will Find - 
+1. A gsap animation for the brand Logo,
+2. ModalTrigger Component, below the logo, capaple of taking and modal and displaying it in the center of the page.
+3. The Modal component itself, which can be close by the X button, clicking outside the modal area/on the backdrop, and by escape key on the keyboard.
+4. If you dont have Metamask extension, you are taken to the page to install it, once the user installs/create an account, they can login.
+5. On Open modal trigger, the user will get a prompt to either connect to metamask if not already connected - or - to switch to polygon network if connected
+6. The UI for the token transfer is quite similar to the uniswap's, and you will understand why when you see the code :P.
+7. I've focused on the UI and not so much on getting the users assets details and building the swap functionality.
+8. I have created a 
+I have not written tests, ive been working with extremely young start upsin the last few years, and inm not hand on on writing tests unfortunately.LineStatus component as well but didnt wire it completely die to lack of time, i will neeed to debug a bit for that.
+9. I created the ModalManager component assuming the bare basic requirements, please let me know if you wanted a specific case, that i have missed. I will update the code. In previous organisations where i had to manage multiple modals on different pages, i had used local storage to track the modals states. 
+10. Ive updated the favicon, to a logo from google, and added a random header for the page for now.
+11. I have used typescript 
+12. I have used TailwindCSS
+13. I WAS NOT ABLE TO WRITE TESTS | NOT HANDS-ON | LAST TEST I WROTE WAS IN 2020 | SORRY | CAN REVISE IT QUICKLY THOUGH.
+14. I will be deploying this via github.
+15. I wanted to create a lot of code into custom hooks eg, global keyboard and mouse events.
+16. I will soon add the npm package of this test and updated the readme again.
 
-In the project directory, you can run:
 
-### `npm start`
+Thankyou
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
