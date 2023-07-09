@@ -1,29 +1,22 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import { ModalContext } from '../contexts/ModalContext';
+import  Modal from './Modal';
 
-interface ModalTriggerProps {
-  modal: React.ReactNode;
-}
+export type ModalTriggerProps = {
+  children: () => React.ReactNode;
+  renderModalContent: () => React.ReactNode;
+};
 
-const ModalTrigger: React.FC<ModalTriggerProps> = ({ modal }) => {
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => {
-    setModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalOpen(false);
-  };
+const ModalTrigger: React.FC<ModalTriggerProps> = ({ children, renderModalContent }) => {
+   // eslint-disable-next-line
+  const { openModal, closeModal } = useContext(ModalContext);
 
   return (
-    <div>
-      <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        onClick={openModal}
-      >
+    <div className='flex font-lg justify-center rounded'>
+      <button className="bg-blue-500 text-white py-2 px-4 rounded transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300" onClick={openModal}>
         Open Modal
       </button>
-      {modal && React.cloneElement(modal as React.ReactElement<any>, { isOpen: modalOpen, onClose: closeModal })}
+      <Modal>{renderModalContent}</Modal>
     </div>
   );
 };
