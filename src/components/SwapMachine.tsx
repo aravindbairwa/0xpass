@@ -4,7 +4,7 @@ import EthLogo from '../assets/eth_logo.png';
 const SwapMachine: React.FC = () => {
   return (
     <div className="hZuQqb">
-          <main className="bHgovE" id="swap-page">
+          <main className="bHgovE">
             <div className="hJYFVB fhPvJh frnZMK gmElZa">
               <div className="hJYFVB fhPvJh leSroW ffkRBX">
                 <div className="EngNh css-rjqmed cursor-pointer">Swap</div>
@@ -22,8 +22,6 @@ const SwapMachine: React.FC = () => {
               <div className="hJYFVB fhPvJh leSroW">
                 <div className="geRwLC">
                   <button
-                    id="open-settings-dialog-button"
-                    aria-label="Transaction Settings"
                     className="fqDOUX"
                   >
                     <div className="hJYFVB fhPvJh jTEzgt">
@@ -49,7 +47,7 @@ const SwapMachine: React.FC = () => {
             </div>
             <div>
               <div className="hfTphi">
-                <div id="swap-currency-input" className="kNzjEC">
+                <div className="kNzjEC">
                   <div className="kbjgwk">
                     <div className="eiTjnJ">
                       <input
@@ -129,7 +127,7 @@ const SwapMachine: React.FC = () => {
             <div className="hinWpT">
               <div>
                 <div className="hfTphi hVtqDn">
-                  <div id="swap-currency-output" className="kNzjEC">
+                  <div className="kNzjEC">
                     <div className="kbjgwk">
                       <div className="eiTjnJ">
                         <input
